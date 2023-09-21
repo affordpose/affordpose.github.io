@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>AffordPose Dataset</title>
+
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" type="image/png" href="img/oakink_icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <script src="js/bootstrap.min.js"></script>
+</head>
+  
+<style>
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+</style>
+
+<body>
+  <div class="container" id="header" style="text-align: center; margin: auto">
+    <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
+      <br />
+      <h2 class="post-title">
+        <img class="left" src="images/logo.jpg" width="240px" height="auto" alt="affordpose_logo.png">
+      </h2>
+      <h2 class="text-center" id="title">
+        AffordPose: A Large-scale Dataset of Hand-Object Interactions<br />
+        with Affordance-driven Hand Pose <br />
+      </h2>
+      <h3 style="font-size: 18px; color: gray;">International Conference on Computer Vision (ICCV) 2023</h3>
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <a style="text-decoration: none;" href="#">Juntao Jian <sup>1</sup></a>
+        &nbsp;&nbsp;
+        <a style="text-decoration: none" href="#">Xiuping Liu <sup>1</sup></a>
+        &nbsp;&nbsp;
+        <a style="text-decoration: none" href="https://manyili12345.github.io/">Manyi Li<sup>2,<b>&#9742</b></sup></a>
+        &nbsp;&nbsp;
+        <a style="text-decoration: none" href="https://csse.szu.edu.cn/staff/ruizhenhu/"> Ruizhen Hu<sup>3</sup> </a>
+        &nbsp;&nbsp;
+        <a style="text-decoration: none" href="#"> Jian Liu<sup>4,<b>&#9742</b></sup> </a>
+        &nbsp;&nbsp;
+        </br>
+        <sup>1 </sup>Dalian University of Technology  &nbsp;&nbsp; <sup>2 </sup>Shandong University <br />
+        <sup>3 </sup>Shenzhen University  &nbsp;&nbsp; <sup>4 </sup>Tsinghua University
+        </br>
+        <sup>&#9742</sup> Corresponding author
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <script>
+    document.getElementById("author-row").style.maxWidth =
+      document.getElementById("title-row").clientWidth + "px";
+  </script>
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <ul class="nav nav-pills nav-justified">
+          <li>
+            <a href="#">
+              <h4><strong>[Paper]</strong></h4>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h4><strong>[Poster]</strong></h4>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <h4><b>[Code(Github)]</b></h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLxFMtmqBGPv9LhYfcDkC3eCjpFqtYS9vJq6IpSsZs76E5gA/viewform?usp=sf_link" target="_blank">
+              <h4><strong>[Dataset]</strong></h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div style="text-align: center;">
+        <h2>Abstract</h2>
+      </div>
+      <div class="text-justify">
+        How human interact with objects depends on the functional roles of the target objects, 
+        which introduces the problem of affordance-aware hand-object interaction. 
+        It requires a large number of human demonstrations for the learning and understanding of 
+        plausible and appropriate hand-object interactions. In this work, we present AffordPose, 
+        a large-scale dataset of hand-object interactions with affordance-driven hand pose. 
+        We first annotate the specific part-level affordance labels for each object, 
+        e.g. twist, pull, handle-grasp, etc, instead of the general intents such as use or handover, 
+        to indicate the purpose and guide the localization of the hand-object interactions. 
+        The fine-grained hand-object interactions reveal the influence of hand-centered affordances on 
+        the detailed arrangement of the hand poses, yet also exhibit a certain degree of diversity. 
+        We collect a total of 26.7K hand-object interactions, each including the 3D object shape, 
+        the part-level affordance label, and the manually adjusted hand poses. The comprehensive data 
+        analysis shows the common characteristics and diversity of hand-object interactions per affordance 
+        via the parameter statistics and contacting computation. We also conduct experiments on the tasks 
+        of hand-object affordance understanding and affordance-oriented hand-object interaction generation, 
+        to validate the effectiveness of our dataset in learning the fine-grained hand-object interactions.
+        <br /><br />
+      </div>
+      <img src="images/teaser.png" class="img-responsive" alt="overview" width="40%"
+        style="max-height: 450px; margin: 30px auto" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-justify">
+      <h3><strong style="color: red;">New!!</strong></h3>
+      <ul>
+        <li>
+          <b><tt>Jul,14,2023</tt></b>: &nbsp  AffordPose
+          got accepted by <a href="#"><strong>ICCV 2023</strong></a>.
+        </li>
+      </ul>
+
+      <!-- 初始化 Foundation JS -->
+      <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+      </script>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>Acknowledgements</h2>
+      <div class="text-justify">
+        If you find our work useful in your research, please cite:
+        <div class="language-plaintext highlighter-rouge">
+          <div class="highlight text-left">
+            <pre class="highlight small">
+              <code>@InProceedings{JianICCV2023AffordPose,
+                    author = {xxxx, xxxx, xxxx},
+                    title = {{AffordPose}: A Large-scale Dataset of Hand-Object Interactions with Affordance-driven Hand Pose},
+                    booktitle = {IEEE/CVF Conference on International Conference on Computer Vision (ICCV)},
+                    year = {2023}
+                    }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <p class="text-justify">
+        <br />
+        The website template was borrowed from
+        <a href="https://oakink.net/">OakInk</a>.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
