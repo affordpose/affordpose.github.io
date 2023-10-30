@@ -11,10 +11,18 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <meta property="og:image" content="./images/hand_logo.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="./images/hand_logo.png">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/fontawesome.min.css" />
   <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
   <script src="js/bootstrap.min.js"></script>
 </head>
@@ -31,7 +39,7 @@
     <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
       <br />
       <h2 class="post-title">
-        <img class="left" src="images/logo.jpg" width="240px" height="auto" alt="affordpose_logo.png">
+        <img class="left" src="images/logo.png" width="240px" height="auto" alt="affordpose_logo.png">
       </h2>
       <h2 class="text-center" id="title">
         AffordPose: A Large-scale Dataset of Hand-Object Interactions<br />
@@ -72,23 +80,23 @@
       <div class="col-sm-8 col-sm-offset-2 text-center">
         <ul class="nav nav-pills nav-justified">
           <li>
-            <a href="https://arxiv.org/pdf/2309.08942.pdf" target="_blank">
-              <h4><strong>[Paper]</strong></h4>
+            <a href='https://openaccess.thecvf.com/content/ICCV2023/html/Jian_AffordPose_A_Large-Scale_Dataset_of_Hand-Object_Interactions_with_Affordance-Driven_Hand_ICCV_2023_paper.html'>
+              <img src='https://img.shields.io/badge/ICCV23-PDF-green?style=plastic&logo=readthedocs&logoColor=brightgreen' alt='Paper PDF' height=22px>
             </a>
           </li>
           <li>
             <a href="poster/AffordPose_poster.pdf">
-              <h4><strong>[Poster]</strong></h4>
+              <img alt="Static Badge" src="https://img.shields.io/badge/Poster-PDF-blue?style=plastic&logo=microsoft powerpoint&logoColor=skyblue" height=22px>
             </a>
           </li>
           <li>
             <a href="https://github.com/GentlesJan/AffordPose" target="_blank">
-              <h4><b>[Code(Github)]</b></h4>
+              <img src='https://img.shields.io/badge/Github-Page-darkgoldenrod?style=plastic&logo=github&logoColor=gold' alt='Project Page' height=22px>
             </a>
           </li>
           <li>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLxFMtmqBGPv9LhYfcDkC3eCjpFqtYS9vJq6IpSsZs76E5gA/viewform?usp=sf_link" target="_blank">
-              <h4><strong>[Dataset]</strong></h4>
+              <img src='https://img.shields.io/badge/Dataset-Page-red?style=plastic&logo=google drive&logoColor=tomato' alt='Project Page' height=22px>
             </a>
           </li>
         </ul>
@@ -143,6 +151,35 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-justify">
+      <h3><strong style="color: red;">New!!</strong></h3>
+      <ul>
+        <li>
+          <b><tt>Oct,30,2023</tt></b>: &nbsp AffordPose Dataset is <strong style="color: red;"><em>released</em></strong>!.
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b><tt>Oct,30,2023</tt></b>: &nbsp Rendered Images are <strong style="color: red;"><em>released</em></strong>!.
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <b><tt>Jul,14,2023</tt></b>: &nbsp  AffordPose
+          got accepted by <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Jian_AffordPose_A_Large-Scale_Dataset_of_Hand-Object_Interactions_with_Affordance-Driven_Hand_ICCV_2023_paper.html"><strong>ICCV 2023</strong></a>.
+        </li>
+      </ul>
+
+      <!-- Foundation JS -->
+      <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+      </script>
+    </div>
+  </div>
+
     <div class = "row">
       <div class="col-md-8 col-md-offset-2">
         <h2>Video</h2>
@@ -153,28 +190,74 @@
   </center>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2 text-justify">
-      <h3><strong style="color: red;">New!!</strong></h3>
-      <ul>
-        <li>
-          <b><tt>Jul,14,2023</tt></b>: &nbsp  AffordPose
-          got accepted by <a href="https://arxiv.org/pdf/2309.08942.pdf"><strong>ICCV 2023</strong></a>.
-        </li>
-      </ul>
-
-      <!-- 初始化 Foundation JS -->
-      <script>
-        $(document).ready(function() {
-            $(document).foundation();
-        })
-      </script>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-md-8 col-md-offset-2">
+      <h2> About</h2>
+      <h3><strong>Data</strong></h3>
+      <p>AffordPose dataset collects a total of about 26.7K affordance-driven hand-object interactions, 
+        involving 641 3D objects from 13 different categories and 8 types of affordance. <br>
+      </p>
+      <p>
+        In addition, we also rendered 36 images<i style="color: red;">(224*224)</i> for each interaction data.
+      </p>
+      <h3><strong>Dataset License</strong></h3>
+      <h4>AffordPose Dataset Copyright License is <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 license.</a></h4>
+      <p><b>Additional Notes:</b></p>
+      <p>Our Data Copyright License for non-commercial scientific research purposes 
+      including rendered images, hand information, object information and segmentations.<br>
+      </p>
+      <p>
+      Without <a href="jianliu2006@gmail.com">Author1's</a> or <a href="manyili@sdu.edu.cn">Author2's</a> prior written permission, 
+      any use for commercial purposes is prohibited, including, without limitation, incorporation in a commercial product, 
+      use in a commercial service, production of other artifacts for commercial purposes, 
+      or training methods/algorithms/neural networks/etc. for commercial use of any kind. 
+      </p>
       <h2>Data Download</h2>
-      <b style="color: blue;"> <i>We will release our dataset as soon as possible.</i></b>
+        <li>Download the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLxFMtmqBGPv9LhYfcDkC3eCjpFqtYS9vJq6IpSsZs76E5gA/viewform?usp=sf_link" target="_b
+        ">
+        <i class="fa fa-download"></i>
+        </span>AffordPose datasets.7z</a><i style="color:gray;">(855M)</i> or
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLxFMtmqBGPv9LhYfcDkC3eCjpFqtYS9vJq6IpSsZs76E5gA/viewform?usp=sf_link" target="_b
+        ">
+        <i class="fa fa-download"></i>
+        </span>Rendered images.rar</a><i style="color:gray;">(7.29G)</i>.
+        You can download specific categories or all the data according to your needs. The data are following structure:
+          <div class="language-plaintext highlighter-rouge">
+            <div class="highlight text-left">
+              <pre class="highlight small">
+<code>└── AffordPose
+            ├──bottle
+            │   ├──3415
+            │   │   ├──3415_Twist
+            │   │   │   ├── 1.json
+            │   │   │   ├── ...
+            │   │   │   └── 28.json
+            │   │   │
+            │   │   └──3415_Wrap-grasp
+            │   │       ├── 1.json
+            │   │       ├── ...
+            │   │       └── 28.json
+            |   |
+            |   └── ...
+            |
+            └── ...</code></pre>
+            </div>
+            </div></li>
+<br/>
+<li>A <tt><em>.json</em></tt> file contains the following information:
+  <div class="language-plaintext highlighter-rouge">
+    <div class="highlight text-left">
+      <pre class="highlight small">
+<code>├── xxx.json
+       ├── rhand_mesh            # the hand mesh
+       ├── dofs                  # the joint configurations of the hand
+       ├── rhand_trans           # the translation of the paml
+       ├── rhand_quat            # the rotation of the paml
+       ├── object_mesh           # the object mesh, and the verts are annotated with affordance label
+       ├── trans_obj             # with the default value: (0,0,0)
+       ├── quat_obj              # with the default value: (1,0,0,0)
+       ├── afford_name           # the object affordance corresponding to the interaction
+       └── class_name            # the object class
+      </code></pre></div></div></li>
     </div>
   </div>
   
@@ -202,7 +285,7 @@
       </div>
       <p class="text-justify">
         <br />
-        The website template was borrowed from
+        &copy; Juntao Jian 2023<span id="footer_year"></span>. The website template was borrowed from
         <a href="https://oakink.net/">OakInk</a>.
       </p>
     </div>
